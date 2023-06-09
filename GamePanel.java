@@ -55,28 +55,28 @@ class GamePanel extends JPanel implements ActionListener {
 
         // import papyrus font size 75
         try {
-            Font papyrus_75 = Font.createFont(Font.TRUETYPE_FONT, new File("source/PAPYRUS.ttf")).deriveFont(75f);
+            this.papyrus_75 = Font.createFont(Font.TRUETYPE_FONT, new File("source/PAPYRUS.ttf")).deriveFont(75f);
         } catch (IOException| FontFormatException e) {
             e.printStackTrace();
         }
 
         // import papyrus font size 35
         try {
-            Font papyrus_35 = Font.createFont(Font.TRUETYPE_FONT, new File("source/PAPYRUS.ttf")).deriveFont(35f);
+            this.papyrus_35 = Font.createFont(Font.TRUETYPE_FONT, new File("source/PAPYRUS.ttf")).deriveFont(35f);
         } catch (IOException| FontFormatException e) {
             e.printStackTrace();
         }
 
         // import snake chan font
         try {
-            Font snake_chan = Font.createFont(Font.TRUETYPE_FONT, new File("source/Snake Chan.ttf")).deriveFont(12f);
+            this.snake_chan = Font.createFont(Font.TRUETYPE_FONT, new File("source/Snake Chan.ttf")).deriveFont(35f);
         } catch (IOException| FontFormatException e) {
             e.printStackTrace();
         }
 
         // import ComicSansMS
         try {
-            Font comic_sans = Font.createFont(Font.TRUETYPE_FONT, new File("source/ComicSansMS3.ttf")).deriveFont(15f);
+            this.comic_sans = Font.createFont(Font.TRUETYPE_FONT, new File("source/ComicSansMS3.ttf")).deriveFont(15f);
         } catch (IOException| FontFormatException e) {
             e.printStackTrace();
         }
