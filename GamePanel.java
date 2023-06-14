@@ -97,7 +97,7 @@ class GamePanel extends JPanel implements ActionListener {
         spawnApple();
     }
 
-    // Pass all the draw functions in the painComponent
+    // Pass all the draw functions in the paintComponent
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         draw(g);
